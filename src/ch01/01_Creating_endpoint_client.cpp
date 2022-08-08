@@ -13,9 +13,9 @@ int main() {
   unsigned short port_number = 3333;
 
   // Used to store information about error that happens while parsing the raw IP-address.
-  asio::error_code ec;
+  system::error_code ec;
 
-  // Step 2. Using IP protocol version independen address representation
+  // Step 2. Using IP protocol version independent address representation
   asio::ip::address ip_address = asio::ip::address::from_string(raw_ip_address, ec);
   if (ec.value() != 0) {
     // Provided IP address is invalid. Breaking execution.
