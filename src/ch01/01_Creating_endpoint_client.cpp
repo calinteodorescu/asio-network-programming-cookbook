@@ -4,8 +4,13 @@
 
 using namespace boost;
 
-int main() {
-  auto console = logging::setup();
+int main()
+{
+  auto console   = logging::setup( );
+
+  auto max_size  = 200 * 1'028 * 1'028;
+  auto max_files = 1;
+  auto logger = spdlog::rotating_logger_mt( "run.log", "D:/Build/Runs/run.log", max_size, max_files );
 
   // Step 1. Assume that the client application has already obtained the IP-address and the protocol port
   // number.
@@ -25,7 +30,9 @@ int main() {
 
   // Step 3.
   asio::ip::tcp::endpoint ep(ip_address, port_number);
-  console->debug("Here's the endpoint: {}", ep);
+
+  console->debug( "Here's the endpoint: {}", ep );
+  logger ->debug( "Here's the endpoint: {}", ep ); logger->flush( );
 
   // Step 4. The endpoint is ready and can be used to specify a particular server in the network the client
   // wants to communicate with.
