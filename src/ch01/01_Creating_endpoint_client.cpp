@@ -1,5 +1,8 @@
 #include "../common/logging.h"
+
 #include <asio.hpp>
+
+using namespace boost;
 
 int main() {
   auto console = logging::setup();

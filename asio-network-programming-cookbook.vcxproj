@@ -88,7 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost;D:\Git\boost.from.boost.org</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -102,7 +102,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost;D:\Git\boost.from.boost.org</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -114,12 +114,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost;D:\Git\boost.from.boost.org</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Git\boost.from.boost.org\libs\asio\include\boost;D:\Git\boost.from.boost.org</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
