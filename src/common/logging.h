@@ -5,8 +5,14 @@
 #include <memory>
 #include <spdlog/spdlog.h>
 
-namespace logging {
-  auto setup() {
+#include <asio.hpp>
+
+using namespace boost;
+
+namespace logging 
+{
+  auto setup() 
+  {
     spdlog::set_pattern("[%n.%l] >> %v");
 
 #ifndef NDEBUG

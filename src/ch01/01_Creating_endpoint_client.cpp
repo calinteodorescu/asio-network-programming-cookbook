@@ -8,8 +8,6 @@
 using namespace std::chrono_literals;
 using           std::chrono::system_clock;
 
-using namespace boost;
-
 int main( void )
 {
     auto console   = logging::setup( );
